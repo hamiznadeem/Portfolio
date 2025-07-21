@@ -1,13 +1,232 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="black" lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+        <!-- navbar start -->
+        <navbar class="navbar bg-base-100 h-10 px-2 p-0 lg:px-30 md:px-20 font-bold">
+            <div class="navbar-start p-0">
+
+                <!-- mobile nav start  -->
+                <div class="dropdown sm:hidden">
+                    <div tabindex="0" role="button" class="pointer px-3 ">
+                        <label class="btn btn-circle">
+                            <i class="ri-menu-2-fill swap-off fill-current"></i>
+                        </label>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Skills</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- mobile nav end  -->
+
+                <div class="w-20 rounded px-2">
+                    <a href="">LOGO</a>
+                </div>
+            </div>
+            <div class="navbar-center p-0">
+                <ul class="menu menu-horizontal px-1 hidden sm:flex">
+                    <li><a class="rounded-sm hover:bg-primary text-light hover:text-white" href="#">About</a></li>
+                    <li><a class="rounded-sm hover:bg-primary text-light hover:text-white" href="#">Services</a></li>
+                    <li><a class="rounded-sm hover:bg-primary text-light hover:text-white" href="#">Projects</a></li>
+                    <li><a class="rounded-sm hover:bg-primary text-light hover:text-white" href="#">Skills</a></li>
+                    <li><a class="rounded-sm hover:bg-primary text-light hover:text-white" href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end p-3">
+                <label class="swap swap-rotate p-0 w-10 h-10 ">
+                    <!-- this hidden checkbox controls the state -->
+                    <input type="checkbox" class="theme-controller" value="lofi" />
+                    <!-- sun icon -->
+                    <i class="ri-sun-fill swap-on fill-current "></i>
+                    <!-- moon icon -->
+                    <i class="ri-moon-fill swap-off fill-current "></i>
+                </label>
+            </div>
+        </navbar>
+        <!-- navbar end-->
+        <!-- fixed nav start -->
+        <div
+            class="w-[95vw] py-1 rounded-[.5rem] backdrop-blur-md shadow-lg font-bold flex item-center justify-center fixed top-[-10%] left-[3%] sm:w-[70vw] sm:left-[15%] md:w-[60vw] md:left-[20%] lg:w-[50vw] lg:left-[25%]">
+            <ul class="menu menu-horizontal p-0 gap-1 sm:gap-2">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <!-- fixed nav end -->
+
+        <!-- main content start -->
+
+        <main class="container-fluid px-3 pt-3 mt-10 2xl:mt-20 2xl:mx-auto">
+            <!-- hero section start -->
+            <div class="flex flex-col md:flex-row items-center justify-between mb-20 gap-6">
+                <!-- hero left side start -->
+                <div class="w-[100%] px-4 text-center sm:text-left md:px-10 md:w-[60%] 2xl:w-[70%]">
+                    <h1 class="text-light text-4xl md:text-5xl 2xl:text-6xl font-bold mb-3 2xl:mb-6">
+                        Company Name
+                    </h1>
+                    <h2 class="text-light opacity-95 text-2xl md:text-3xl 2xl:text-5xl font-[400] mb-8 2xl:mb-12">
+                        Frontend & CMS Developer
+                    </h2>
+                    <div class="flex item-center justify-center sm:justify-start mb-8 2xl:mb-12 gap-3">
+                        <span class="bg-primary text-white px-4 py-2 rounded-sm text-[1.5rem]"><i
+                                class="ri-html5-fill"></i></span>
+                        <span class="bg-primary text-white px-4 py-2 rounded-sm text-[1.5rem]"><i
+                                class="ri-css3-fill"></i></span>
+                        <span class="bg-primary text-white px-4 py-2 rounded-sm text-[1.5rem]"><i
+                                class="ri-javascript-fill"></i></span>
+                        <span class="bg-primary text-white px-4 py-2 rounded-sm text-[1.5rem]"><i
+                                class="ri-tailwind-css-fill"></i></span>
+                        <span class="bg-primary text-white px-4 py-2 rounded-sm text-[1.5rem]"><i
+                                class="ri-wordpress-fill"></i></span>
+                    </div>
+                    <p class="text-light text-base md:text-md 2xl:text-2xl mb-8 2xl:mb-12">
+                        I am a passionate frontend developer with a knack for creating beautiful and functional web
+                        applications. My expertise lies in HTML, CSS, JavaScript, and modern frameworks like React and
+                        Vue.js. I love turning ideas into reality and delivering exceptional user experiences.
+                    </p>
+                    <div class="flex gap-3 px-1 justify-center sm:justify-start items-center">
+                        <a href=""><span
+                                class="bg-base-300 px-2 py-1 rounded-sm shadow-lg shadow-light hover:bg-primary text-ligh hover:text-white transition-colors duration-150">
+                                <i class="ri-github-line"></i></span></a>
+                        <a href=""><span
+                                class="bg-base-300 px-2 py-1 rounded-sm shadow-lg shadow-light hover:bg-primary text-ligh hover:text-white transition-colors duration-150"><i
+                                    class="ri-mail-line"></i></span></a>
+                        <a href=""><span
+                                class="bg-base-300 px-2 py-1 rounded-sm shadow-lg shadow-light hover:bg-primary text-ligh hover:text-white transition-colors duration-150"><i
+                                    class="ri-twitter-x-fill"></i></span></a>
+                        <a href=""><span
+                                class="bg-base-300 px-2 py-1 rounded-sm shadow-lg shadow-light hover:bg-primary text-ligh hover:text-white transition-colors duration-150"><i
+                                    class="ri-linkedin-fill"></i></span></a>
+                    </div>
+                </div>
+                <!-- hero left side end -->
+
+                <!-- hero right side start -->
+                <div class="w-[100%] px-4 flex items-center justify-center sm:justify-start md:w-[40%] 2xl:w-[30%]">
+                    <div class="w-[100%] h-100 bg-base-200 rounded "></div>
+                </div>
+                <!-- hero right side end -->
+            </div>
+            <!-- hero section end -->
+
+            <!-- About section - start -->
+            <div class="w-[100%] text-center flex flex-col item-center justify-center">
+                <h2
+                    class="text-light text-2xl md:text-3xl 2xl:text-5xl font-[400] mb-8 2xl:mb-12">
+                    About Me
+                </h2>
+                <p class="text-light md:text-md 2xl:text-2xl mb-8 2xl:mb-12">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tempore neque corporis
+                    veritatis
+                    est delectus. Ea debitis, ex repellendus quo assumenda voluptatem doloremque suscipit nesciunt
+                    praesentium optio porro at! Eaque accusantium aspernatur ab quod ipsa, voluptatem numquam magnam
+                    pariatur voluptas ducimus, beatae quisquam, iusto eligendi velit! Necessitatibus ipsum minus
+                    molestiae inventore maiores impedit explicabo velit laboriosam, sit repellendus fuga, eos maxime
+                    exercitationem, iusto dolorum? Laborum corrupti minus eius necessitatibus, harum eum cum minima
+                    reprehenderit molestiae accusantium. Quod blanditiis corporis officiis iure explicabo voluptas
+                    aperiam consequatur sint? Atque quidem molestias incidunt excepturi,
+                </p>
+            </div>
+            <!-- About section - end -->
+
+            <!-- Services section - start -->
+            <div class="w-[100%] flex flex-col items-center justify-center px-3 md:px-10 text-center">
+                <h2
+                    class="text-light opacity-95 text-center text-2xl md:text-3xl 2xl:text-5xl font-[400] mb-8 2xl:mb-12">
+                    Services
+                </h2>
+                <div class="grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-4">
+                    <div
+                        class="bg-base-200 flex justify-between text-light w-90 h-25 sm:w-100 rounded-sm text-left px-6 py-2 mb-3 shadow-lg shadow-light">
+                        <div class="flex flex-col ">
+                            <h2 class="text-lg mb-1 font-medium">FRONT-END</h2>
+                            <p class="text-xs font-light mb-3">I develop frontend with coding super smooth</p>
+                            <div class="flex items-center justify-start gap-2">
+                                <a class="text-xs hover:text-white hover:bg-black px-2 py-1 rounded-sm transition-colors duration-150" href="#">
+                                    <i class="ri-arrow-left-up-line"></i>
+                                    10 PROJECTS
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-item-center text-2xl">
+                            <i class="ri-code-s-slash-fill"></i>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-base-200 flex justify-between text-light w-90 h-25 sm:w-100 rounded-sm text-left px-6 py-2 mb-3 shadow-lg shadow-light">
+                        <div class="flex flex-col ">
+                            <h2 class="text-lg mb-1 font-medium">Wordpress</h2>
+                            <p class="text-xs font-light mb-3"> Wordpress</p>
+                            <div class="flex items-center justify-start gap-2">
+                                <a class="text-xs hover:text-white hover:bg-black px-2 py-1 rounded-sm transition-colors duration-150" href="#">
+                                    <i class="ri-arrow-left-up-line"></i>
+                                    5 PROJECTS
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-item-center text-2xl">
+                            <i class="ri-code-s-slash-fill"></i>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-base-200 flex justify-between text-light w-90 h-25 sm:w-100 rounded-sm text-left px-6 py-2 mb-3 shadow-lg shadow-light">
+                        <div class="flex flex-col ">
+                            <h2 class="text-lg mb-1 font-medium">Web Hosting</h2>
+                            <p class="text-xs font-light mb-3">Hosting</p>
+                            <div class="flex items-center justify-start gap-2">
+                                <a class="text-xs hover:text-white hover:bg-black px-2 py-1 rounded-sm transition-colors duration-150" href="#">
+                                    <i class="ri-arrow-left-up-line"></i>
+                                    20 PROJECTS
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-item-center text-2xl">
+                            <i class="ri-code-s-slash-fill"></i>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-base-200 flex justify-between text-light w-90 h-25 sm:w-100 rounded-sm text-left px-6 py-2 mb-3 shadow-lg shadow-light">
+                        <div class="flex flex-col ">
+                            <h2 class="text-lg mb-1 font-medium">SEO</h2>
+                            <p class="text-xs font-light mb-3">SEO</p>
+                            <div class="flex items-center justify-start gap-2">
+                                <a class="text-xs hover:text-white hover:bg-black px-2 py-1 rounded-sm transition-colors duration-150" href="#">
+                                    <i class="ri-arrow-left-up-line"></i>
+                                    7 PROJECTS
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-item-center text-2xl">
+                            <i class="ri-code-s-slash-fill"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- main content start -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>

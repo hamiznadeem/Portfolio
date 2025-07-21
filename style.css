@@ -1,0 +1,15 @@
+
+.onhover:hover {
+    outline: none !important;
+    border: none !important;
+}
+
+.onhover:focus {
+    background-color: #ffffff !important;
+    outline: none !important;
+    border: none !important;
+}
+
+.pointer {
+    cursor: pointer;
+}
