@@ -15,3 +15,11 @@ h1,h2,h3,h4,h5,h6,p {
 .pointer {
     cursor: pointer;
 }
+.scrollbar-nn {
+    scrollbar-width: none !important; /* Firefox */
+    -ms-overflow-style: none !important; /* Internet Explorer and Edge */
+}
+.scrollbar-nn::-webkit-scrollbar{
+    display: none !important;
+    
+}

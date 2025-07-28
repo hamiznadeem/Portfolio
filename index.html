@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-theme="black" lang="en">
+<html data-theme="lofi" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -14,7 +14,7 @@
 
 <body>
     <!-- navbar start -->
-    <navbar class="navbar bg-base-100 h-10 px-4 sm:px-8 p-0 lg:px-30 md:px-20 font-bold">
+    <navbar class="navbar bg-base-100 h-10 px-2 sm:px-5 md:px-18 lg:px-38 2xl:px-30 font-bold">
         <div class="navbar-start p-0">
 
             <!-- mobile nav start  -->
@@ -50,7 +50,7 @@
         <div class="navbar-end p-3">
             <label class="swap swap-rotate p-0 w-10 h-10 ">
                 <!-- this hidden checkbox controls the state -->
-                <input type="checkbox" class="theme-controller" value="lofi" />
+                <input type="checkbox" class="theme-controller" value="black" />
                 <!-- sun icon -->
                 <i class="ri-sun-fill swap-on fill-current "></i>
                 <!-- moon icon -->
@@ -61,7 +61,7 @@
     <!-- navbar end-->
     <!-- fixed nav start -->
     <div
-        class="w-[95vw] py-1 rounded-[.5rem] backdrop-blur-md shadow-lg font-bold flex item-center justify-center fixed top-[-10%] left-[3%] sm:w-[70vw] sm:left-[15%] md:w-[60vw] md:left-[20%] lg:w-[50vw] lg:left-[25%]">
+        class="w-[95vw] py-1 rounded-[.5rem] bg-primary text-white shadow-lg font-bold flex item-center justify-center fixed top-[-12%] left-[3%] sm:w-[70vw] sm:left-[15%] md:w-[60vw] md:left-[20%] lg:w-[50vw] lg:left-[25%]">
         <ul class="menu menu-horizontal p-0 gap-1 sm:gap-2">
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
@@ -74,18 +74,21 @@
 
     <!-- main content start -->
 
-    <main class="container-fluid px-5 pt-3 mt-10 2xl:mt-20 2xl:mx-auto">
+    <main class="container-fluid px-5 pt-3 mt-10 md:px-10 lg:px-30 2xl:mt-20 2xl:px-30 2xl:mx-auto">
         <!-- hero section start -->
         <div class="flex flex-col md:flex-row items-center justify-between mb-20 gap-6">
             <!-- hero left side start -->
-            <div class="w-[100%] px-4 text-center sm:text-left md:px-10 md:w-[60%] 2xl:w-[70%]">
-                <h1 class="text-light text-4xl md:text-5xl 2xl:text-6xl font-bold mb-3 2xl:mb-6">
+            <div class="w-[100%] px-4 text-left md:px-10">
+                <h1 class="text-light text-3xl md:text-4xl 2xl:text-5xl font-bold mb-3 2xl:mb-6">
                     Company Name
                 </h1>
-                <h2 class="text-light opacity-95 text-2xl md:text-3xl 2xl:text-5xl font-[400] mb-8 2xl:mb-12">
+                <h2 class="text-light opacity-95 text-xl md:text-2xl 2xl:text-4xl font-[400] mb-4 2xl:mb-8">
                     Frontend & CMS Developer
                 </h2>
-                <div class="flex item-center justify-center sm:justify-start mb-8 2xl:mb-12 gap-3">
+                <p class="text-light text-base md:text-lg 2xl:text-3xl mb-8 2xl:mb-12">
+                    Creating user-friendly websites that look great and work fast.
+                </p>
+                <div class="flex item-center justify-start mb-8 2xl:mb-12 gap-3">
                     <span
                         class="bg-base-300 shadow-lg px-4 py-2.5 rounded-[50%] text-[1.5rem] text-orange-500  hover:scale-110 hover:-translate-y-1 transition-all duration-200  "><i
                             class="ri-html5-fill"></i></span>
@@ -102,48 +105,33 @@
                         class="bg-base-300 shadow-lg px-4 py-2.5 rounded-[50%] text-[1.5rem] text-blue-300  hover:scale-110 hover:-translate-y-1  transition-all duration-200 "><i
                             class="ri-wordpress-fill"></i></span>
                 </div>
-                <p class="text-light text-base md:text-md 2xl:text-2xl mb-8 2xl:mb-12">
-                    I am a passionate frontend developer with a knack for creating beautiful and functional web
-                    applications. My expertise lies in HTML, CSS, JavaScript, and modern frameworks like React and
-                    Vue.js. I love turning ideas into reality and delivering exceptional user experiences.
-                </p>
-                <div class="flex gap-3 px-1 justify-center sm:justify-start items-center">
-                    <a href=""><span
-                            class="bg-base-300 px-2 py-1 rounded-sm shadow-lg shadow-light hover:bg-primary text-ligh hover:text-white transition-all duration-200">
+                <div class="flex gap-3 px-1 justify-start items-center">
+                    <a href="#"><span
+                            class="bg-base-300 px-2 py-1 text-md rounded-sm shadow-lg shadow-light hover:bg-primary text-ligh hover:text-white transition-all duration-200">
                             <i class="ri-github-line"></i></span></a>
-                    <a href=""><span
-                            class="bg-base-300 px-2 py-1 rounded-sm shadow-lg shadow-light hover:bg-primary text-ligh hover:text-white transition-all duration-200"><i
+                    <a href="#"><span
+                            class="bg-base-300 px-2 py-1 text-md rounded-sm shadow-lg shadow-light hover:bg-primary text-ligh hover:text-white transition-all duration-200"><i
                                 class="ri-mail-line"></i></span></a>
-                    <a href=""><span
-                            class="bg-base-300 px-2 py-1 rounded-sm shadow-lg shadow-light hover:bg-primary text-ligh hover:text-white transition-all duration-200"><i
+                    <a href="#"><span
+                            class="bg-base-300 px-2 py-1 text-md rounded-sm shadow-lg shadow-light hover:bg-primary text-ligh hover:text-white transition-all duration-200"><i
                                 class="ri-twitter-x-fill"></i></span></a>
-                    <a href=""><span
-                            class="bg-base-300 px-2 py-1 rounded-sm shadow-lg shadow-light hover:bg-primary text-ligh hover:text-white transition-all duration-200"><i
+                    <a href="#"><span
+                            class="bg-base-300 px-2 py-1 text-md rounded-sm shadow-lg shadow-light hover:bg-primary text-ligh hover:text-white transition-all duration-200"><i
                                 class="ri-linkedin-fill"></i></span></a>
                 </div>
             </div>
             <!-- hero left side end -->
-
-            <!-- hero right side start -->
-            <div class="w-[100%] px-4 flex items-center justify-center md:justify-start md:w-[40%] 2xl:w-[30%]">
-                <div class="w-[90%] h-100 bg-base-200 rounded-lg "></div>
-            </div>
-            <!-- hero right side end -->
         </div>
         <!-- hero section end -->
 
-        <div class="w-[100%] flex items-center justify-center my-10">
-            <div class="w-[95%] h-[2px] bg-base-300"></div>
-        </div>
 
-
+        <!-- About section - start -->
         <div class="flex items-center justify-between mb-20">
-            <!-- About section - start -->
-            <div class="w-[100%] text-center flex flex-col item-center justify-center md:px-10">
+            <div class="w-[100%] text-left px-5  flex flex-col item-center justify-center md:px-14">
                 <h2 class="text-light font-bold text-2xl md:text-3xl 2xl:text-5xl font-[400] mb-8 2xl:mb-12">
                     About Me
                 </h2>
-                <p class="text-light text-center md:text-md 2xl:text-2xl px-6 mb-8 2xl:mb-12">
+                <p class="text-light  md:text-md 2xl:text-2xl mb-8 2xl:mb-12">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tempore neque corporis
                     veritatis
                     est delectus. Ea debitis, ex repellendus quo assumenda voluptatem doloremque suscipit nesciunt
@@ -151,43 +139,193 @@
                     pariatur voluptas ducimus, beatae quisquam, iusto eligendi velit! Necessitatibus ipsum minus
                     molestiae inventore maiores impedit explicabo velit laboriosam, sit repellendus fuga,
                 </p>
-                <div class="stats shadow-sm">
+                <div class="flex gap-3 px-1 justify-start items-center mb-8 2xl:mb-12">
+                    <a class="btn border-none shadow-sm  hover:bg-primary hover:text-white transition-all duration-300"
+                        href="#">Our Work</a>
+                    <a class="btn border-none shadow-sm  hover:bg-primary hover:text-white transition-all duration-300"
+                        href="#">Contact us</a>
+                </div>
+                <div class="stats shadow-sm text-center">
                     <div class="stat">
-                        <div class="stat-figure text-2xl text-light">
-                            <i class="ri-pages-line"></i>
-                        </div>
-                        <div class="stat-title">Custom Websites</div>
+                        <div class="stat-title">Custom</div>
                         <div class="stat-value text-2xl">15</div>
                         <div class="stat-desc">projects <br> Completed</div>
                     </div>
                     <div class="stat">
-                        <div class="stat-figure text-2xl text-light">
-                            <i class="ri-wordpress-fill"></i>
-                        </div>
                         <div class="stat-title">Wordpress</div>
                         <div class="stat-value text-2xl">17</div>
                         <div class="stat-desc">projects <br> Completed</div>
                     </div>
 
                     <div class="stat">
-                        <div class="stat-figure text-2xl text-light">
-                            <i class="ri-wordpress-fill"></i>
-                        </div>
                         <div class="stat-title">Total</div>
-                        <div class="stat-value">35</div>
+                        <div class="stat-value text-2xl">35</div>
                         <div class="stat-desc">projects <br> Completed</div>
                     </div>
                 </div>
-                <div class="py-2 my-5">
-                    <a href="#" class="btn btn-outline btn-primary rounded-sm sm:btn-sm md:btn-md">Contact Us</a>
+            </div>
+        </div>
+        <!-- About section - end -->
+        <!-- services section start -->
+        <div class="w-[100%] text-left px-5  flex flex-col item-center justify-center md:px-14 mb-12">
+            <h2 class="text-light font-bold text-2xl md:text-3xl 2xl:text-5xl font-[400] mb-8 2xl:mb-12">
+                Services
+            </h2>
+            <div class="py-6">
+                <div class="flex gap-5 py-5 px-0 sm:px-2 items-center justify-between border-b-2 border-t-2 ">
+                    <div class="w-[40%] md:w-[30%] flex items-center justify-start gap-3">
+                        <h3 class="text-sm md:text-md font-semibold">01</h3>
+                        <h3 class="text-md text-left md:text-lg font-bold">Web Design</h3>
+                    </div>
+                    <p class="text-sm md:text-lg fontsemibold w-[50%] md:w-[40%]">
+                        I design clean, elegant, and user-friendly websites. interfaces that feel effortless</p>
+                </div>
+                <div class="flex gap-5 py-5 px-0 sm:px-2 items-center justify-between border-b-2 ">
+                    <div class="w-[40%] md:w-[30%] flex items-center justify-start gap-3">
+                        <h3 class="text-sm md:text-md font-semibold">02</h3>
+                        <h3 class="text-md text-left md:text-lg font-bold">Web Development</h3>
+                    </div>
+                    <p class="text-sm md:text-lg fontsemibold w-[50%] md:w-[40%]">
+                        I design clean, elegant, and user-friendly websites. interfaces that feel effortless</p>
+                </div>
+                <div class="flex gap-5 py-5 px-0 sm:px-2 items-center justify-between border-b-2 ">
+                    <div class="w-[40%] md:w-[30%] flex items-center justify-start gap-3">
+                        <h3 class="text-sm md:text-md font-semibold">03</h3>
+                        <h3 class="text-md text-left md:text-lg font-bold">CMS Development</h3>
+                    </div>
+                    <p class="text-sm md:text-lg fontsemibold w-[50%] md:w-[40%]">
+                        I design clean, elegant, and user-friendly websites. interfaces that feel effortless</p>
+                </div>
+                <div class="flex gap-5 py-5 px-0 sm:px-2 items-center justify-between border-b-2 ">
+                    <div class="w-[40%] md:w-[30%] flex items-center justify-start gap-3">
+                        <h3 class="text-sm md:text-md font-semibold">04</h3>
+                        <h3 class="text-md text-left md:text-lg font-bold">Web Hosting</h3>
+                    </div>
+                    <p class="text-sm md:text-lg fontsemibold w-[50%] md:w-[40%]">
+                        I design clean, elegant, and user-friendly websites. interfaces that feel effortless</p>
+                </div>
+                <div class="flex gap-5 py-5 px-0 sm:px-2 items-center justify-between border-b-2 ">
+                    <div class="w-[40%] md:w-[30%] flex items-center justify-start gap-3">
+                        <h3 class="text-sm md:text-md font-semibold">05</h3>
+                        <h3 class="text-md text-left md:text-lg font-bold">SEO</h3>
+                    </div>
+                    <p class="text-sm md:text-lg fontsemibold w-[50%] md:w-[40%]">
+                        I design clean, elegant, and user-friendly websites. interfaces that feel effortless</p>
                 </div>
             </div>
-            <!-- About section - end -->
         </div>
+
+        <div class="w-[100%] text-left px-5  flex flex-col item-center justify-center md:px-14 mb-12">
+            <h2 class="text-light font-bold text-2xl md:text-3xl 2xl:text-5xl font-[400] mb-8 2xl:mb-12">
+                Projects
+            </h2>
+            <div class="tabs tabs-border">
+                <input type="radio" name="my_tabs_2" class="tab" aria-label="Custom" checked="checked" />
+                <div class="tab-content py-4">
+                    <div
+                        class="card flex flex-col sm:flex-row border-1 border-gray-300 rounded border-base-300 card-md bg-base-100 mb-8">
+                        <div
+                            class="w-full sm:w-130 rounded-t-lg sm:rounded-t-none  sm:rounded-l-lg h-[60vh] sm:h-[75vh] md:h-[75vh] lg:h-[65vh] border-b-1 sm:border-e-1 border-gray-300  overflow-auto scrollbar-nn">
+                            <img class="obeject-cover w-full object-top block" src="cars-port.jpg" alt="cars" />
+                        </div>
+                        <div class="card-body sm:w-100 md:w-140 md:px-10 py-4">
+                            <h2 class="card-title md:mt-3 text-lg sm:text-2xl font-bold">
+                                Matchwize
+                            </h2>
+                            <p class="mt-1 mb-3 md:mt-3 text-md text-light opacity-70 font-semibold text-justify">matchwize analyzes your resume against job descriptions to give you a match
+                                score and actionable suggestions to improve your chances.</p>
+                            <ul class="list-disc pl-5 mb-4 md:mb-6">
+                                <h3 class="font-bold mb-2">Key Features:</h3>
+                                <li>Gemini API integration for resume analysis</li>
+                                <li>Supabase for data storage</li>
+                            </ul>
+                            <div class="card-actions justify-start mb-3">
+                                <h3 class="badge badge-outline badge-md rounded-xl">HTML</h3>
+                                <h3 class="badge badge-outline badge-md rounded-xl">Tailwind Css</h3>
+                                <h3 class="badge badge-outline badge-md rounded-xl">Javascript</h3>
+                            </div>
+                            <div class="card-actions justify-start">
+                                <a class="btn btn-outline hover:bg-black hover:text-white transition-color duration-300  rounded "
+                                    href="">Live <i class="ri-arrow-right-up-line"></i></a>
+                                <a class="btn btn-outline hover:bg-black hover:text-white transition-color duration-300 rounded "
+                                    href="">Git <i class="ri-arrow-right-up-line"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="card flex flex-col sm:flex-row border-1 border-gray-300 rounded border-base-300 card-md bg-base-100 mb-8">
+                        <div
+                            class="w-full sm:w-130 rounded-t-lg sm:rounded-t-none  sm:rounded-l-lg h-[60vh] sm:h-[75vh] md:h-[75vh] lg:h-[65vh] border-b-1 sm:border-e-1 border-gray-300  overflow-auto scrollbar-nn">
+                            <img class="obeject-cover w-full object-top block" src="port-2.jpg" alt="cars" />
+                        </div>
+                        <div class="card-body sm:w-100 md:w-140 md:px-10 py-4">
+                            <h2 class="card-title md:mt-3 text-lg sm:text-2xl font-bold">
+                                Matchwize
+                            </h2>
+                            <p class="mt-1 mb-3 md:mt-3 text-md text-light opacity-70 font-semibold text-justify">matchwize analyzes your resume against job descriptions to give you a match
+                                score and actionable suggestions to improve your chances.</p>
+                            <ul class="list-disc pl-5 mb-4 md:mb-6">
+                                <h3 class="font-bold mb-2">Key Features:</h3>
+                                <li>Gemini API integration for resume analysis</li>
+                                <li>Supabase for data storage</li>
+                            </ul>
+                            <div class="card-actions justify-start mb-3">
+                                <h3 class="badge badge-outline badge-md rounded-xl">HTML</h3>
+                                <h3 class="badge badge-outline badge-md rounded-xl">Tailwind Css</h3>
+                                <h3 class="badge badge-outline badge-md rounded-xl">Javascript</h3>
+                            </div>
+                            <div class="card-actions justify-start">
+                                <a class="btn btn-outline hover:bg-black hover:text-white transition-color duration-300  rounded "
+                                    href="">Live <i class="ri-arrow-right-up-line"></i></a>
+                                <a class="btn btn-outline hover:bg-black hover:text-white transition-color duration-300 rounded "
+                                    href="">Git <i class="ri-arrow-right-up-line"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="card flex flex-col sm:flex-row border-1 border-gray-300 rounded border-base-300 card-md bg-base-100 mb-8">
+                        <div
+                            class="w-full sm:w-130 rounded-t-lg sm:rounded-t-none  sm:rounded-l-lg h-[60vh] sm:h-[75vh] md:h-[75vh] lg:h-[65vh] border-b-1 sm:border-e-1 border-gray-300  overflow-auto scrollbar-nn">
+                            <img class="obeject-cover w-full object-top block" src="port3.jpg" alt="cars" />
+                        </div>
+                        <div class="card-body sm:w-100 md:w-140 md:px-10 py-4">
+                            <h2 class="card-title md:mt-3 text-lg sm:text-2xl font-bold">
+                                Matchwize
+                            </h2>
+                            <p class="mt-1 mb-3 md:mt-3 text-md text-light opacity-70 font-semibold text-justify">matchwize analyzes your resume against job descriptions to give you a match
+                                score and actionable suggestions to improve your chances.</p>
+                            <ul class="list-disc pl-5 mb-4 md:mb-6">
+                                <h3 class="font-bold mb-2">Key Features:</h3>
+                                <li>Gemini API integration for resume analysis</li>
+                                <li>Supabase for data storage</li>
+                            </ul>
+                            <div class="card-actions justify-start mb-3">
+                                <h3 class="badge badge-outline badge-md rounded-xl">HTML</h3>
+                                <h3 class="badge badge-outline badge-md rounded-xl">Tailwind Css</h3>
+                                <h3 class="badge badge-outline badge-md rounded-xl">Javascript</h3>
+                            </div>
+                            <div class="card-actions justify-start">
+                                <a class="btn btn-outline hover:bg-black hover:text-white transition-color duration-300  rounded "
+                                    href="">Live <i class="ri-arrow-right-up-line"></i></a>
+                                <a class="btn btn-outline hover:bg-black hover:text-white transition-color duration-300 rounded "
+                                    href="">Git <i class="ri-arrow-right-up-line"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <input type="radio" name="my_tabs_2" class="tab" aria-label="CMS" />
+                <div class="tab-content border-base-300 bg-base-100 p-10">Tab content 2</div>
+
+                <input type="radio" name="my_tabs_2" class="tab" aria-label="Other" />
+                <div class="tab-content border-base-300 bg-base-100 p-10">Tab content 3</div>
+            </div>
+        </div>
+
     </main>
-    <!-- main content start -->
+    <!-- main content end -->
 
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 
